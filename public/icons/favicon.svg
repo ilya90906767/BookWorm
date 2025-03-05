@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="bookGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E8DCC4"/>
+      <stop offset="100%" style="stop-color:#D4B996"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Book base -->
+  <path d="M96 64C96 46.33 110.33 32 128 32H384C401.67 32 416 46.33 416 64V448C416 465.67 401.67 480 384 480H128C110.33 480 96 465.67 96 448V64Z" fill="url(#bookGradient)" filter="url(#glow)"/>
+  
+  <!-- Book spine shadow -->
+  <path d="M96 64V448C96 465.67 110.33 480 128 480H384C401.67 480 416 465.67 416 448V64C416 46.33 401.67 32 384 32H128C110.33 32 96 46.33 96 64ZM128 448V64H384V448H128Z" fill="#1A1A1A" fill-opacity="0.1"/>
+  
+  <!-- Text lines representing different languages -->
+  <g fill="#1A1A1A" fill-opacity="0.8">
+    <!-- English -->
+    <rect x="144" y="96" width="224" height="8" rx="4"/>
+    <!-- Chinese -->
+    <rect x="144" y="144" width="192" height="8" rx="4"/>
+    <!-- Russian -->
+    <rect x="144" y="192" width="208" height="8" rx="4"/>
+    <!-- Spanish -->
+    <rect x="144" y="240" width="176" height="8" rx="4"/>
+    <!-- Japanese -->
+    <rect x="144" y="288" width="200" height="8" rx="4"/>
+  </g>
+  
+  <!-- Sound wave symbol for audiobooks -->
+  <g transform="translate(144, 336)" fill="#1A1A1A" fill-opacity="0.8">
+    <rect x="0" y="16" width="8" height="32" rx="4"/>
+    <rect x="16" y="8" width="8" height="48" rx="4"/>
+    <rect x="32" y="0" width="8" height="64" rx="4"/>
+    <rect x="48" y="8" width="8" height="48" rx="4"/>
+    <rect x="64" y="16" width="8" height="32" rx="4"/>
+  </g>
+  
+  <!-- Language symbol -->
+  <circle cx="288" cy="368" r="48" fill="#1A1A1A" fill-opacity="0.1"/>
+  <path d="M288 336C266.33 336 248 354.33 248 376C248 397.67 266.33 416 288 416C309.67 416 328 397.67 328 376H288V336Z" fill="#1A1A1A" fill-opacity="0.8"/>
+  <path d="M288 336V376H328C328 354.33 309.67 336 288 336Z" fill="#1A1A1A" fill-opacity="0.6"/>
+</svg> 
